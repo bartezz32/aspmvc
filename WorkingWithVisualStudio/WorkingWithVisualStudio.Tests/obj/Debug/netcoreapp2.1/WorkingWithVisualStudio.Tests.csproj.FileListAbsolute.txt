@@ -1,0 +1,17 @@
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.deps.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.runtimeconfig.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.runtimeconfig.dev.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.pdb
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\bin\Debug\netcoreapp2.1\WorkingWithVisualStudio.pdb
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.csprojAssemblyReference.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.csproj.CoreCompileInputs.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.AssemblyInfoInputs.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.AssemblyInfo.cs
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.csproj.CopyComplete
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio.Tests\obj\Debug\netcoreapp2.1\WorkingWithVisualStudio.Tests.pdb

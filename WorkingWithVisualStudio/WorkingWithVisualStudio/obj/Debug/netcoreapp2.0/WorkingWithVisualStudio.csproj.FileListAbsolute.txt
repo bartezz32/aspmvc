@@ -1,0 +1,11 @@
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\bin\Debug\netcoreapp2.0\WorkingWithVisualStudio.deps.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\bin\Debug\netcoreapp2.0\WorkingWithVisualStudio.runtimeconfig.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\bin\Debug\netcoreapp2.0\WorkingWithVisualStudio.runtimeconfig.dev.json
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\bin\Debug\netcoreapp2.0\WorkingWithVisualStudio.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\bin\Debug\netcoreapp2.0\WorkingWithVisualStudio.pdb
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.csprojAssemblyReference.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.csproj.CoreCompileInputs.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.AssemblyInfoInputs.cache
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.AssemblyInfo.cs
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.dll
+D:\Documents\Programming\aspmvc\WorkingWithVisualStudio\WorkingWithVisualStudio\obj\Debug\netcoreapp2.0\WorkingWithVisualStudio.pdb
