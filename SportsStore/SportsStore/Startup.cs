@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SportsStore.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using SportsStore.Models.ViewModels;
 
 
 namespace SportsStore
@@ -27,6 +28,7 @@ namespace SportsStore
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IOrderRepository,EFOrderRepository>();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
