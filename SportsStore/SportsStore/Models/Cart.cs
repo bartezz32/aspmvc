@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SportsStore.Models
 {
+
     public class Cart
     {
         private List<CartLine> lineCollection = new List<CartLine>();
@@ -32,7 +31,8 @@ namespace SportsStore.Models
         public virtual void RemoveLine(Product product) =>
             lineCollection.RemoveAll(l => l.Product.ProductID == product.ProductID);
 
-        public virtual decimal ComputeTotalValue() => lineCollection.Sum(e => e.Product.Price * e.Quantity);
+        public virtual decimal ComputeTotalValue() =>
+            lineCollection.Sum(e => e.Product.Price * e.Quantity);
 
         public virtual void Clear() => lineCollection.Clear();
 
