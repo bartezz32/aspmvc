@@ -5,6 +5,7 @@ namespace UrlsAndRoutes.Controllers
 {
     public class CustomerController : Controller
     {
+        [Route("app/[controller]/actions/[action]/{id:weekday?}")]
         public ViewResult Index() => View("Result",
             new Result {
                 Controller = nameof(CustomerController),
