@@ -34,6 +34,9 @@ namespace UrlsAndRoutes
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Home}/{action=Index}");
                // routes.MapRoute(
                    // name: "NewRoute",
                    // template: "App/Do{action}",
