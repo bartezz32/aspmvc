@@ -8,6 +8,7 @@ namespace ControllersAndActions.Tests
 {
     public class ActionTests
     {
+        
         [Fact]
         public void NotFoundActionMethod()
         {
@@ -16,5 +17,6 @@ namespace ControllersAndActions.Tests
             Assert.Equal(404, result.StatusCode);
 
         }
+        
     }
 }
