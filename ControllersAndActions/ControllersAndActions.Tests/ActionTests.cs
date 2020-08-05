@@ -21,7 +21,8 @@ namespace ControllersAndActions.Tests
             Assert.IsType<System.DateTime>(result.ViewData["Date"]);
 
         }
-
+        /*
+        
         [Fact]
         public void Redirect()
         {
@@ -29,6 +30,19 @@ namespace ControllersAndActions.Tests
             RedirectResult result = controller.Redirect();
             Assert.Equal("/Example/Index", result.Url);
             Assert.True(result.Permanent);
+        }
+        
+        */
+        [Fact]
+        public void Redirection()
+        {
+            ExampleController controller = new ExampleController();
+            RedirectToRouteResult result = controller.Redirect();
+
+            Assert.False(result.Permanent);
+            Assert.Equal("Example", result.RouteValues["controller"]);
+            Assert.Equal("Index", result.RouteValues["action"]);
+            Assert.Equal("MyID", result.RouteValues["ID"]);
         }
     } 
 }

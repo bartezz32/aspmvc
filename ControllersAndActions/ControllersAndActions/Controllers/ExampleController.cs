@@ -17,6 +17,11 @@ namespace ControllersAndActions.Controllers
 
         public ViewResult Result() => View((object) "Hello world!");
 
-        public RedirectResult Redirect() => RedirectPermanent("/Example/Index");
+        public RedirectToRouteResult Redirect() => RedirectToRoute(new
+        {
+            controller = "Example",
+            action = "Index",
+            ID = "MyID"
+        });
     }
 }
