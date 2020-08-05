@@ -9,7 +9,7 @@ namespace ControllersAndActions.Tests
     public class ActionTests
     {
 
-
+        /*
         [Fact]
         public void ModelObjectType()
         {
@@ -21,7 +21,7 @@ namespace ControllersAndActions.Tests
             Assert.IsType<System.DateTime>(result.ViewData["Date"]);
 
         }
-        /*
+        
         
         [Fact]
         public void Redirect()
@@ -32,7 +32,7 @@ namespace ControllersAndActions.Tests
             Assert.True(result.Permanent);
         }
         
-        */
+        
         [Fact]
         public void Redirection()
         {
@@ -41,6 +41,14 @@ namespace ControllersAndActions.Tests
 
             Assert.False(result.Permanent);
             Assert.Equal("Index", result.ActionName);
+        }
+        */
+        [Fact]
+        public void JsonActionMethod()
+        {
+            ExampleController controller = new ExampleController();
+            JsonResult result = controller.Index();
+            Assert.Equal(new[] { "Ala","Bartek","Tomek" }, result.Value);
         }
     } 
 }

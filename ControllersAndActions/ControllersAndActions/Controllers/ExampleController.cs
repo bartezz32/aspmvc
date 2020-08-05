@@ -8,13 +8,6 @@ namespace ControllersAndActions.Controllers
 {
     public class ExampleController : Controller
     {
-        public ViewResult Index()
-        {
-            ViewBag.Message = "Hello";
-            ViewBag.Date = DateTime.Now;
-            return View();
-        }
-
-        public RedirectToActionResult Redirect() => RedirectToAction("Index");
+        public JsonResult Index() => Json(new[] {"Ala", "Bartek", "Tomek"});
     }
 }
