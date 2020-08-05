@@ -43,12 +43,14 @@ namespace ControllersAndActions.Tests
             Assert.Equal("Index", result.ActionName);
         }
         */
+
         [Fact]
-        public void JsonActionMethod()
+        public void NotFoundActionMethod()
         {
             ExampleController controller = new ExampleController();
-            JsonResult result = controller.Index();
-            Assert.Equal(new[] { "Ala","Bartek","Tomek" }, result.Value);
+            StatusCodeResult result = controller.Index();
+
+            Assert.Equal(404, result.StatusCode);
         }
     } 
 }
