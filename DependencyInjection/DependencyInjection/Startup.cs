@@ -33,7 +33,7 @@ namespace DependencyInjection
                     return new AlternateRepository();
                 }
             });
-            services.AddScoped<IRepository, MemoryRepository>();
+            services.AddSingleton<IRepository, MemoryRepository>();
             services.AddTransient< MemoryRepository>();
             services.AddTransient<IModelStorage, DictionaryStorage>();
             services.AddTransient<ProductTotalizer>();
