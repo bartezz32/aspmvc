@@ -16,8 +16,7 @@ namespace Tests
             var mock = new Mock<IRepository>();
 
             mock.SetupGet(m => m.Products).Returns(data);
-            TypeBroker.SetTestObject(mock.Object);
-            HomeController controller = new HomeController();
+            HomeController controller = new HomeController(mock.Object);
 
             ViewResult result = controller.Index();
             Assert.Equal(data, result.ViewData.Model);

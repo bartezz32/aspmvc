@@ -10,8 +10,22 @@ namespace DependencyInjection.Controllers
 {
     public class HomeController : Controller
     {
-        public IRepository Repository { get; } = TypeBroker.Repository;
-        public ViewResult Index() => View(Repository.Products);
+        public IRepository repository;
+
+        private ProductTotalizer totalizer;
+
+        public HomeController(IRepository repo, ProductTotalizer total)
+        {
+            repository = repo;
+            totalizer = total;
+        }
+
+        public ViewResult Index()
+        {
+            ViewBag.Total = totalizer.Total;
+            return View(repository.Products);
+        }
+
 
     }
 }
