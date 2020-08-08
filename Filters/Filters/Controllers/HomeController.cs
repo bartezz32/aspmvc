@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Filters.Controllers
 {
-    [HttpsOnly]
+    [ViewResultDetails]
     public class HomeController : Controller
     {
         public IActionResult Index() => View("Message", "This is Index() method from HomeController");
