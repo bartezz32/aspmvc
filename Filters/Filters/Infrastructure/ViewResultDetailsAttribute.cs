@@ -11,7 +11,7 @@ namespace Filters.Infrastructure
 {
     public class ViewResultDetailsAttribute : ResultFilterAttribute
     {
-        public override void OnResultExecuting(ResultExecutingContext context)
+        public override async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
         {
             Dictionary<string, string> dict = new Dictionary<string, string>
             {
@@ -36,6 +36,7 @@ namespace Filters.Infrastructure
                     Model = dict
                 }
             };
+            await next();
         }
     }
 }

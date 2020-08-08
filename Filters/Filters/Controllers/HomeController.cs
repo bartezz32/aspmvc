@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Filters.Controllers
 {
+    [Profile]
     [ViewResultDetails]
     public class HomeController : Controller
     {
