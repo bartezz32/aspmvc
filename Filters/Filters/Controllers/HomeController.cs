@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Filters.Controllers
 {
     [TypeFilter(typeof(DiagnosticsFilter))]
-    [TypeFilter(typeof(TimeFilter))]
+    [ServiceFilter(typeof(TimeFilter))]
     public class HomeController : Controller
     {
         public IActionResult Index() => View("Message", "This is Index() method from HomeController");

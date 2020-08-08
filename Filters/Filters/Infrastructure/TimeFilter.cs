@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,7 +10,10 @@ namespace Filters.Infrastructure
 {
     public class TimeFilter : IAsyncActionFilter, IAsyncResultFilter
     {
-        private Stopwatch timer;
+      
+        private ConcurrentQueue<double> actionTimes = new ConcurrentQueue<double>();
+        private ConcurrentQueue<double> resultTimes = new ConcurrentQueue<double>();
+
         private IFilterDiagnostics diagnostic;
 
         public TimeFilter(IFilterDiagnostics diags)
@@ -19,16 +23,20 @@ namespace Filters.Infrastructure
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            timer = Stopwatch.StartNew();
+            Stopwatch timer = Stopwatch.StartNew();
             await next();
-            diagnostic.AddMessage($@"Action filter elapsed time: {timer.Elapsed.TotalMilliseconds}");
+            timer.Stop();
+            actionTimes.Enqueue(timer.Elapsed.TotalMilliseconds);
+            diagnostic.AddMessage($@"Action filter elapsed time: {timer.Elapsed.TotalMilliseconds}, avg: {actionTimes.Average():F2}ms.");
         }
 
         public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
         {
+            Stopwatch timer = Stopwatch.StartNew();
             await next();
             timer.Stop();
-            diagnostic.AddMessage($@"Result filter elapsed time: {timer.Elapsed.TotalMilliseconds}");
+            resultTimes.Enqueue(timer.Elapsed.TotalMilliseconds);
+            diagnostic.AddMessage($@"Result filter elapsed time: {timer.Elapsed.TotalMilliseconds}, avg: {actionTimes.Average():F2}ms.");
         }
     }
 }
