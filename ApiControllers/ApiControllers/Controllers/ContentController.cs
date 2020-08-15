@@ -13,13 +13,31 @@ namespace ApiControllers.Controllers
         [HttpGet("string")]
         public string GetString() => "This is a string response";
 
-        [HttpGet("object")]
+        [HttpGet("object/{format?}")]
+        [FormatFilter]
+      //  [Produces("application/json", "application/xml")]
         public Reservation GetObject() => new Reservation
         {
             ReservationId = 100,
             ClientName = "John",
             Location = "Hall"
         };
+
+        [HttpPost]
+        [Consumes("application/json")]
+        public Reservation ReceiveJson([FromBody] Reservation reservation)
+        {
+            reservation.ClientName = "Json";
+            return reservation;
+        }
+
+        [HttpPost]
+        [Consumes("application/xml")]
+        public Reservation ReceiveXml([FromBody] Reservation reservation)
+        {
+            reservation.ClientName = "Xml";
+            return reservation
+        }
     }
 
 }
