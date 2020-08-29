@@ -12,6 +12,7 @@ namespace Views.Controllers
         {
             ViewBag.Message = "Hello world";
             ViewBag.Time = DateTime.Now.ToString("HH:mm:ss");
+            return View("DebugData");
         }
 
         public ViewResult List() => View();
