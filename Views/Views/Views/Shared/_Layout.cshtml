@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> @ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body class="m-1 p-1">
+@RenderSection("Header")
+<div class="bg-info">
+    Part of a Layout
+</div>
+
+@RenderBody()
+
+<div class="bg-info">
+    Part of a Layout
+</div>
+@RenderSection("Footer")
+<div class="bg-info">
+    Part of a Layout
+</div>
+ 
+</body>
+</html>

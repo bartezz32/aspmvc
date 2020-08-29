@@ -18,11 +18,6 @@ namespace Views
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.Configure<MvcViewOptions>(options =>
-            {
-                options.ViewEngines.Clear();
-                options.ViewEngines.Insert(0, new DebugDataViewEngine());
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

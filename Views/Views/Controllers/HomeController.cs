@@ -8,12 +8,7 @@ namespace Views.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
-        {
-            ViewBag.Message = "Hello world";
-            ViewBag.Time = DateTime.Now.ToString("HH:mm:ss");
-            return View("DebugData");
-        }
+        public ViewResult Index() => View(new string[] {"Apples", "Oranges", "Pears"});
 
         public ViewResult List() => View();
     }
