@@ -11,12 +11,25 @@
     Part of a Layout
 </div>
 
-@RenderBody()
+@RenderSection("Body")
+
 
 <div class="bg-info">
     Part of a Layout
 </div>
-@RenderSection("Footer")
+
+@if (IsSectionDefined("Footer"))
+{
+    @RenderSection("Footer")
+}
+else
+{
+    <h4> This is default </h4> 
+}
+
+@RenderSection("scripts", false)
+
+
 <div class="bg-info">
     Part of a Layout
 </div>

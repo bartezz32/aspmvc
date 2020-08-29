@@ -8,7 +8,7 @@ namespace Views.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index() => View(new string[] {"Apples", "Oranges", "Pears"});
+        public ViewResult Index() => View("MyView",new string[] {"Apples", "Oranges", "Pears"});
 
         public ViewResult List() => View();
     }
